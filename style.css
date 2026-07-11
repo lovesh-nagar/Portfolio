@@ -196,15 +196,38 @@ body {
 }
 
 .logo {
-    font-weight: 800;
-    font-size: 1.4rem;
-    color: var(--text-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
     text-decoration: none;
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+.logo-symbol {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    color: var(--text-primary);
     letter-spacing: -0.5px;
 }
 
-.logo-code {
+.logo-sub {
     color: var(--accent-blue);
+    font-weight: 400;
+}
+
+.logo-cursor {
+    color: var(--accent-purple);
+    font-weight: 800;
+    animation: blink 1.2s step-end infinite;
 }
 
 .nav-menu {
