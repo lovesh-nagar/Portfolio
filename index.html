@@ -1,153 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovesh Nagar | Linux Administrator & Junior DevOps Engineer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Lovesh Nagar, a Linux System Administrator and Junior DevOps Engineer with 2+ years of experience in Docker, AWS, Azure, Kubernetes, and high-availability server infrastructures.">
+    <meta name="keywords" content="Lovesh Nagar, Linux Administrator, Junior DevOps, Systems Engineer, Docker, Kubernetes, AWS, Azure, RHCSA, EX188, Jaipur">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Background glowing shapes -->
+    <div class="glow-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
 
-lovesh.nagar _
-About Skills Experience Projects Certifications Get in Touch
-￼
-2+ Years Professional Experience
-Hi, I'm Lovesh Nagar
-I'm a Linux System Administrator|
-Specialized in containerizing multi-tier applications, setting up CI/CD workflows, managing virtualization systems, and configuring high-performance server architectures on AWS and Azure cloud platforms.
-Explore My Work Download Resume
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-symbol"><i class="fa-solid fa-infinity"></i></span>
+                <span class="logo-text">lovesh<span class="logo-sub">.nagar</span></span>
+                <span class="logo-cursor">_</span>
+            </a>
+            <button class="nav-toggle" aria-label="toggle navigation" id="navToggle">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link btn-contact">Get in Touch</a>
+            </nav>
+        </div>
+    </header>
 
-lovesh@devops-node:~
-lovesh@devops:~$ neofetch
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-avatar">
+                        <img src="assets/profile.jpg" alt="Lovesh Nagar" class="profile-photo">
+                    </div>
+                    <div class="badge-container">
+                        <span class="hero-badge"><i class="fa-solid fa-server"></i> 2+ Years Professional Experience</span>
+                    </div>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Lovesh Nagar</span></h1>
+                    <h2 class="hero-subtitle">I'm a <span id="typing-text">Linux System Administrator</span><span class="cursor">|</span></h2>
+                    <p class="hero-description">
+                        Specialized in containerizing multi-tier applications, setting up CI/CD workflows, managing virtualization systems, and configuring high-performance server architectures on AWS and Azure cloud platforms.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                        <a href="resume.pdf" class="btn btn-secondary" download="Lovesh_Nagar_Resume.pdf"><i class="fa-solid fa-download"></i> Download Resume</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/lovesh-nagar" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lovesh-nagar" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:nagarlavish99@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+916350458087" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="terminal-mockup">
+                        <div class="terminal-header">
+                            <span class="term-dot close"></span>
+                            <span class="term-dot minimize"></span>
+                            <span class="term-dot expand"></span>
+                            <span class="term-title">lovesh@devops-node:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="line-cmd"><span class="user">lovesh</span>@<span class="host">devops</span>:~$ neofetch</p>
+                            <div class="neofetch-output">
+                                <div class="ascii-art">
+                                    <pre>
   /\_/ \
  / o o  \
 (   "   )
   \~_~/
    / \
   (   )
-  /   \
-OS: Red Hat Enterprise Linux 9
-Host: Proxmox VE VM
-Kernel: 5.15.0-x86_64
-Uptime: 2 years, 3 months
-Shell: bash 5.1.16
-Containers: Docker Engine (Active)
-Orchestrator: Minikube / K8s
-Active CPU: Intel Xeon (AWS vCPU)
-lovesh@devops:~$ _
-Who I Am
-About Me
+  /   \</pre>
+                                </div>
+                                <div class="system-info">
+                                    <p><span class="label">OS:</span> Red Hat Enterprise Linux 9</p>
+                                    <p><span class="label">Host:</span> Proxmox VE VM</p>
+                                    <p><span class="label">Kernel:</span> 5.15.0-x86_64</p>
+                                    <p><span class="label">Uptime:</span> 2 years, 3 months</p>
+                                    <p><span class="label">Shell:</span> bash 5.1.16</p>
+                                    <p><span class="label">Containers:</span> Docker Engine (Active)</p>
+                                    <p><span class="label">Orchestrator:</span> Minikube / K8s</p>
+                                    <p><span class="label">Active CPU:</span> Intel Xeon (AWS vCPU)</p>
+                                </div>
+                            </div>
+                            <p class="line-cmd"><span class="user">lovesh</span>@<span class="host">devops</span>:~$ <span class="blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-Infrastructure Administrator & DevOps Practitioner
-I bridges the gap between infrastructure maintenance and modern DevOps practices. For over two years, I have worked as an L2 Support Engineer and Linux System Administrator, maintaining high availability for business critical setups.
-I specialize in automating development paths, designing container pipelines, and maintaining virtualized stacks. My core drive is implementing zero-downtime environments, auditing security controls, and configuring cloud resources to match dynamic engineering scale.
-2+ Years Exp
-15+ Apps Deployed
-2x RH Certifications
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3>Infrastructure Administrator & DevOps Practitioner</h3>
+                        <p>
+                            I bridges the gap between infrastructure maintenance and modern DevOps practices. For over two years, I have worked as an L2 Support Engineer and Linux System Administrator, maintaining high availability for business critical setups.
+                        </p>
+                        <p>
+                            I specialize in automating development paths, designing container pipelines, and maintaining virtualized stacks. My core drive is implementing zero-downtime environments, auditing security controls, and configuring cloud resources to match dynamic engineering scale.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Exp</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Apps Deployed</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2x</span>
+                                <span class="stat-label">RH Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-badges">
+                        <div class="cert-showcase">
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-brands fa-redhat redhat-color"></i></div>
+                                <h4>Red Hat Certified System Administrator (RHCSA)</h4>
+                                <p class="cert-id">Certification ID: 240-200-170</p>
+                                <span class="badge-status">Active</span>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-icon"><i class="fa-brands fa-docker docker-color"></i></div>
+                                <h4>Red Hat Specialist in Containers (EX188)</h4>
+                                <p class="cert-id">Containers & Docker Infrastructure</p>
+                                <span class="badge-status">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-Red Hat Certified System Administrator (RHCSA)
-Certification ID: 240-200-170
-Active
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">What I Excel At</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <!-- Skills Navigation Tabs -->
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-category="all">All Skills</button>
+                    <button class="tab-btn" data-category="cloud">Cloud & Virtualization</button>
+                    <button class="tab-btn" data-category="devops">DevOps & K8s</button>
+                    <button class="tab-btn" data-category="systems">Linux & Web Servers</button>
+                    <button class="tab-btn" data-category="databases">Databases & Tools</button>
+                </div>
 
-Red Hat Specialist in Containers (EX188)
-Containers & Docker Infrastructure
-Active
-What I Excel At
-Technical Expertise
+                <div class="skills-grid" id="skillsGrid">
+                    
+                    <!-- AWS Skills -->
+                    <div class="skill-card" data-category="cloud">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-brands fa-aws skill-icon-color"></i> AWS Top 12 Services</span>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <p class="skill-details">EC2, S3, IAM, VPC, ECS, EKS, RDS, Route 53, Lambda, ELB/ALB (Round Robin, Weighted, Least Outstanding Requests, LCU metrics), CloudWatch, Auto Scaling</p>
+                    </div>
 
-All Skills Cloud & Virtualization DevOps & K8s Linux & Web Servers Databases & Tools
-AWS Top 12 Services Advanced
-EC2, S3, IAM, VPC, ECS, EKS, RDS, Route 53, Lambda, ELB/ALB (Round Robin, Weighted, Least Outstanding Requests, LCU metrics), CloudWatch, Auto Scaling
-Azure Core & Advanced Intermediate
-Virtual Machines (VM), App Services, Azure VNets, Azure Kubernetes Service (AKS), Resource Manager (ARM Templates), Azure DevOps
-Docker Containerization Expert
-Docker Installation, Troubleshooting, Multi-stage builds, Distroless images, production-level container implementation, volume & network maps
-Kubernetes / Minikube Advanced
-Minikube configurations, Ingress Controllers (Nginx Ingress), Networking Methods (ClusterIP, NodePort, LoadBalancer services), CNI plugins, Network Policies
-GitHub Actions & CI/CD Advanced
-CI/CD Pipeline integration, workflow troubleshooting, repository debugging, zero-downtime automated deployment paths
-Linux Administration Expert
-RHEL (RHCSA), Ubuntu, CentOS, Logical Volume Manager (LVM), disk partitioning, server hardening, log audits, user access control
-Web Servers & Proxies Expert
-Nginx, Apache, LiteSpeed, reverse proxies, load balancer setup, SSL/TLS certificates, PM2 process management
-DNS & Email Security Expert
-cPanel/WHM, Plesk administration, DNS records configuration, email authentication and delivery setup (SPF, DKIM, DMARC)
-Proxmox VE Advanced
-Virtual machine orchestration, system cloning, storage pools, hardware routing, automated system backups
-Database Engine Admin Advanced
-MySQL, PostgreSQL, MongoDB, MariaDB - configuration, user grants, performance tuning, query monitoring, regular backups
-Shell Scripting & Tools Advanced
-Bash scripting, cron automation, Prometheus, Grafana system metrics dashboard monitoring, firewalls (IPTables, UFW)
-Career Journey
-Professional Experience
+                    <!-- Azure Skills -->
+                    <div class="skill-card" data-category="cloud">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-cloud skill-icon-color"></i> Azure Core & Advanced</span>
+                            <span class="skill-percentage">Intermediate</span>
+                        </div>
+                        <p class="skill-details">Virtual Machines (VM), App Services, Azure VNets, Azure Kubernetes Service (AKS), Resource Manager (ARM Templates), Azure DevOps</p>
+                    </div>
 
+                    <!-- Docker Skills -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-brands fa-docker skill-icon-color"></i> Docker Containerization</span>
+                            <span class="skill-percentage">Expert</span>
+                        </div>
+                        <p class="skill-details">Docker Installation, Troubleshooting, Multi-stage builds, Distroless images, production-level container implementation, volume & network maps</p>
+                    </div>
 
-Sept 2024 - Present
-Linux System Administrator & Junior DevOps
-CloudTechTiq Technologies Private Limited | Jaipur, India
-Working on L2-level support, web hosting architecture administration, and implementing developer-centric automated pipelines.
-	•	Deployed and maintained production-ready applications built in Node.js, Python (Uvicorn \& gunicorn), Laravel, and React across Apache/Nginx and PM2-managed environments.
-	•	Installed and configured Docker on production Linux servers; containerized select Node.js and Python services for consistent, isolated deployments.
-	•	Troubleshot container-level issues --- networking, volume mounts, and resource limits --- to minimize deployment downtime.
-	•	Built and extended GitHub Actions CI/CD workflows, resolving pipeline and build failures to streamline deployment from commit to production.
-	•	Diagnosed and resolved email deliverability issues using DNS records (SPF, DKIM, DMARC).
-	•	Configured and managed virtual machines in Proxmox VE.
-	•	Set up and maintained daily/weekly backup solutions for disaster recovery.
-	•	Performed regular log monitoring, troubleshooting, and server patching to ensure system stability.
+                    <!-- Kubernetes Skills -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-dharmachakra skill-icon-color"></i> Kubernetes / Minikube</span>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <p class="skill-details">Minikube configurations, Ingress Controllers (Nginx Ingress), Networking Methods (ClusterIP, NodePort, LoadBalancer services), CNI plugins, Network Policies</p>
+                    </div>
 
-May 2024 - Sept 2024
-Linux System Administrator Intern
-GRRAS Solutions (P) Ltd | Jaipur, India
-Hands-on practice in Linux environment configurations, infrastructure management, and service installations.
-	•	Installed and configured LAMP stack, deployed WordPress websites.
-	•	Deployed Laravel and Magento applications; configured databases, cron jobs, and SSL.
-	•	Gained practical experience with Docker volumes, partitions, and logical volumes (LVM).
-	•	Set up DNS servers, handled log monitoring, SSH configuration, and cron automation.
-	•	Practiced server security, service hardening, and network troubleshooting.
+                    <!-- CI/CD Skills -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-code-merge skill-icon-color"></i> GitHub Actions & CI/CD</span>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <p class="skill-details">CI/CD Pipeline integration, workflow troubleshooting, repository debugging, zero-downtime automated deployment paths</p>
+                    </div>
 
-Nov 2023 - May 2024
-Digital Marketing Executive & IT Support (Freelance)
-Learn N Prep | Kota, India
-Collaborated with tech teams to run campaigns and perform basic website maintenance.
-	•	Managed Google Ads, Facebook Ads, and created SEO-rich content for YouTube and blogs.
-	•	Performed basic server-side website updates; collaborated with the technical team on site deployments.
-Case Studies
-Projects Built
+                    <!-- Linux Systems -->
+                    <div class="skill-card" data-category="systems">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-brands fa-linux skill-icon-color"></i> Linux Administration</span>
+                            <span class="skill-percentage">Expert</span>
+                        </div>
+                        <p class="skill-details">RHEL (RHCSA), Ubuntu, CentOS, Logical Volume Manager (LVM), disk partitioning, server hardening, log audits, user access control</p>
+                    </div>
 
-Three-Tier Stack
-DevBoard — Task Management Board
-A fully featured containerized task management system composed of a React frontend, a Go (Golang) REST API backend, and a PostgreSQL database.
-3-Tier React/Vite + Go REST API + PostgreSQL stack Docker Compose with network isolation and volume mapping GitHub Actions CI/CD (ESLint, Go vet/test, self-hosted runner CD) Custom Makefile automation (setup, logs, resets, smoke tests)
-React Go (Golang) Postgres Docker Docker Compose
-Repository Code
-Cloud Container Deploy
-Flask Application — AWS ECS Deployment
-Containerized Python Flask application deployed on AWS Elastic Container Service (ECS) using Fargate tasks and protected by an ALB.
-Single-stage vs. multi-stage distroless Docker builds AWS ECS Task Definitions & Services setup with ECR Application Load Balancer target groups and /health endpoint Automated image builds & pushes via GitHub Actions
-Python 3.14 Flask AWS ECS AWS ALB Distroless Docker
-Repository Code
-Badges & Credentials
-Certifications
+                    <!-- Web Servers -->
+                    <div class="skill-card" data-category="systems">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-globe skill-icon-color"></i> Web Servers & Proxies</span>
+                            <span class="skill-percentage">Expert</span>
+                        </div>
+                        <p class="skill-details">Nginx, Apache, LiteSpeed, reverse proxies, load balancer setup, SSL/TLS certificates, PM2 process management</p>
+                    </div>
 
-RHCSA
-Red Hat Certified System Administrator
-Issued by Red Hat
-Validation of core system administration skills, covering terminal operations, security hardening, user management, storage setup, and network configurations.
-ID: 240-200-170
-EX188
-Red Hat Specialist in Containers & Kubernetes
-Issued by Red Hat
-Validation of core container management skills, covering container building (Dockerfiles), orchestration (Podman/Docker), scaling, and production implementation.
-ID: 240-200-170
-Let's Connect
-Contact Me
+                    <!-- DNS & Email -->
+                    <div class="skill-card" data-category="systems">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-envelope-open-text skill-icon-color"></i> DNS & Email Security</span>
+                            <span class="skill-percentage">Expert</span>
+                        </div>
+                        <p class="skill-details">cPanel/WHM, Plesk administration, DNS records configuration, email authentication and delivery setup (SPF, DKIM, DMARC)</p>
+                    </div>
 
-Let's build reliable infrastructures together
-I'm open to Linux administration support, application deployment workflows, cloud setups, and Junior DevOps opportunities. Let's talk!
+                    <!-- Virtualization -->
+                    <div class="skill-card" data-category="cloud">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-network-wired skill-icon-color"></i> Proxmox VE</span>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <p class="skill-details">Virtual machine orchestration, system cloning, storage pools, hardware routing, automated system backups</p>
+                    </div>
 
-Send an Email nagarlavish99@gmail.com
+                    <!-- Databases -->
+                    <div class="skill-card" data-category="databases">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-database skill-icon-color"></i> Database Engine Admin</span>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <p class="skill-details">MySQL, PostgreSQL, MongoDB, MariaDB - configuration, user grants, performance tuning, query monitoring, regular backups</p>
+                    </div>
 
-Call / WhatsApp +91 6350458087
+                    <!-- Scripting -->
+                    <div class="skill-card" data-category="databases">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-terminal skill-icon-color"></i> Shell Scripting & Tools</span>
+                            <span class="skill-percentage">Advanced</span>
+                        </div>
+                        <p class="skill-details">Bash scripting, cron automation, Prometheus, Grafana system metrics dashboard monitoring, firewalls (IPTables, UFW)</p>
+                    </div>
 
-Based In
-Jaipur, Rajasthan, India (302015)
-Your Name
-Your Email
-Subject
-Message
-Send Message
+                </div>
+            </div>
+        </section>
 
-© 2026 Lovesh Nagar. All Rights Reserved.
-GitHub LinkedIn
+        <!-- Experience Timeline Section -->
+        <section class="experience" id="experience">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Career Journey</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="timeline">
+                    
+                    <!-- CloudTechTiq -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sept 2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Linux System Administrator &amp; Junior DevOps</h3>
+                            <h4 class="company">CloudTechTiq Technologies Private Limited <span class="location">| Jaipur, India</span></h4>
+                            <p class="job-intro">Working on L2-level support, web hosting architecture administration, and implementing developer-centric automated pipelines.</p>
+                            <ul class="job-list">
+                                <li>Deployed and maintained production-ready applications built in Node.js, Python (Uvicorn \& gunicorn), Laravel, and React across Apache/Nginx and PM2-managed environments.</li>
+                                <li>Installed and configured Docker on production Linux servers; containerized select Node.js and Python services for consistent, isolated deployments.</li>
+                                <li>Troubleshot container-level issues --- networking, volume mounts, and resource limits --- to minimize deployment downtime.</li>
+                                <li>Built and extended GitHub Actions CI/CD workflows, resolving pipeline and build failures to streamline deployment from commit to production.</li>
+                                <li>Diagnosed and resolved email deliverability issues using DNS records (SPF, DKIM, DMARC).</li>
+                                <li>Configured and managed virtual machines in Proxmox VE.</li>
+                                <li>Set up and maintained daily/weekly backup solutions for disaster recovery.</li>
+                                <li>Performed regular log monitoring, troubleshooting, and server patching to ensure system stability.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- GRRAS Solutions -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2024 - Sept 2024</div>
+                        <div class="timeline-content">
+                            <h3>Linux System Administrator Intern</h3>
+                            <h4 class="company">GRRAS Solutions (P) Ltd <span class="location">| Jaipur, India</span></h4>
+                            <p class="job-intro">Hands-on practice in Linux environment configurations, infrastructure management, and service installations.</p>
+                            <ul class="job-list">
+                                <li>Installed and configured LAMP stack, deployed WordPress websites.</li>
+                                <li>Deployed Laravel and Magento applications; configured databases, cron jobs, and SSL.</li>
+                                <li>Gained practical experience with Docker volumes, partitions, and logical volumes (LVM).</li>
+                                <li>Set up DNS servers, handled log monitoring, SSH configuration, and cron automation.</li>
+                                <li>Practiced server security, service hardening, and network troubleshooting.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Learn N Prep -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Nov 2023 - May 2024</div>
+                        <div class="timeline-content">
+                            <h3>Digital Marketing Executive &amp; IT Support (Freelance)</h3>
+                            <h4 class="company">Learn N Prep <span class="location">| Kota, India</span></h4>
+                            <p class="job-intro">Collaborated with tech teams to run campaigns and perform basic website maintenance.</p>
+                            <ul class="job-list">
+                                <li>Managed Google Ads, Facebook Ads, and created SEO-rich content for YouTube and blogs.</li>
+                                <li>Performed basic server-side website updates; collaborated with the technical team on site deployments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Case Studies</span>
+                    <h2 class="section-title">Projects Built</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Devboard Project -->
+                    <div class="project-card">
+                        <div class="project-header-info">
+                            <span class="project-type"><i class="fa-solid fa-cubes"></i> Three-Tier Stack</span>
+                            <h3>DevBoard — Task Management Board</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                A fully featured containerized task management system composed of a React frontend, a Go (Golang) REST API backend, and a PostgreSQL database.
+                            </p>
+                            <div class="project-highlights">
+                                <span><i class="fa-solid fa-check"></i> 3-Tier React/Vite + Go REST API + PostgreSQL stack</span>
+                                <span><i class="fa-solid fa-check"></i> Docker Compose with network isolation and volume mapping</span>
+                                <span><i class="fa-solid fa-check"></i> GitHub Actions CI/CD (ESLint, Go vet/test, self-hosted runner CD)</span>
+                                <span><i class="fa-solid fa-check"></i> Custom Makefile automation (setup, logs, resets, smoke tests)</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">Go (Golang)</span>
+                                <span class="tech-pill">Postgres</span>
+                                <span class="tech-pill">Docker</span>
+                                <span class="tech-pill">Docker Compose</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/lovesh-nagar/Devboard-three-tier-application" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Repository Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Docker Deploy Python -->
+                    <div class="project-card">
+                        <div class="project-header-info">
+                            <span class="project-type"><i class="fa-brands fa-aws"></i> Cloud Container Deploy</span>
+                            <h3>Flask Application — AWS ECS Deployment</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                Containerized Python Flask application deployed on AWS Elastic Container Service (ECS) using Fargate tasks and protected by an ALB.
+                            </p>
+                            <div class="project-highlights">
+                                <span><i class="fa-solid fa-check"></i> Single-stage vs. multi-stage distroless Docker builds</span>
+                                <span><i class="fa-solid fa-check"></i> AWS ECS Task Definitions & Services setup with ECR</span>
+                                <span><i class="fa-solid fa-check"></i> Application Load Balancer target groups and /health endpoint</span>
+                                <span><i class="fa-solid fa-check"></i> Automated image builds & pushes via GitHub Actions</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-pill">Python 3.14</span>
+                                <span class="tech-pill">Flask</span>
+                                <span class="tech-pill">AWS ECS</span>
+                                <span class="tech-pill">AWS ALB</span>
+                                <span class="tech-pill">Distroless Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/lovesh-nagar/Docker-Deploy-Python" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Repository Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications" id="certifications">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Badges &amp; Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    
+                    <!-- RHCSA Card -->
+                    <div class="cert-panel">
+                        <div class="cert-badge-visual RHCSA-badge">
+                            <i class="fa-brands fa-redhat"></i>
+                            <span>RHCSA</span>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Red Hat Certified System Administrator</h3>
+                            <p class="issuer">Issued by Red Hat</p>
+                            <p class="desc">Validation of core system administration skills, covering terminal operations, security hardening, user management, storage setup, and network configurations.</p>
+                            <div class="id-pill"><i class="fa-solid fa-id-card"></i> ID: 240-200-170</div>
+                        </div>
+                    </div>
+
+                    <!-- EX188 Card -->
+                    <div class="cert-panel">
+                        <div class="cert-badge-visual EX188-badge">
+                            <i class="fa-brands fa-docker"></i>
+                            <span>EX188</span>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Red Hat Specialist in Containers &amp; Kubernetes</h3>
+                            <p class="issuer">Issued by Red Hat</p>
+                            <p class="desc">Validation of core container management skills, covering container building (Dockerfiles), orchestration (Podman/Docker), scaling, and production implementation.</p>
+                            <div class="id-pill"><i class="fa-solid fa-id-card"></i> ID: 240-200-170</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Let's build reliable infrastructures together</h3>
+                        <p>
+                            I'm open to Linux administration support, application deployment workflows, cloud setups, and Junior DevOps opportunities. Let's talk!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method-card">
+                                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="card-details">
+                                    <span>Send an Email</span>
+                                    <a href="mailto:nagarlavish99@gmail.com">nagarlavish99@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method-card">
+                                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div class="card-details">
+                                    <span>Call / WhatsApp</span>
+                                    <a href="tel:+916350458087">+91 6350458087</a>
+                                </div>
+                            </div>
+                            <div class="contact-method-card">
+                                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="card-details">
+                                    <span>Based In</span>
+                                    <p>Jaipur, Rajasthan, India (302015)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-panel">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" required placeholder="e.g. john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Infrastructure setup, deployment, etc.">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required placeholder="Describe your project, timeline, or open role..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="formFeedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="footer-container">
+            <p>&copy; 2026 Lovesh Nagar. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/lovesh-nagar" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/lovesh-nagar" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
