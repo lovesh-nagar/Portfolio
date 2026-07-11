@@ -1,0 +1,182 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{helvet} % Modern sans-serif font
+\usepackage{fancyhdr}
+\usepackage{array}
+
+% Set sans-serif as default font family
+\renewcommand{\familydefault}{\sfdefault}
+
+% Color definitions (Professional Slate and Navy theme)
+\definecolor{primary}{HTML}{1A365D} % Deep Navy
+\definecolor{text}{HTML}{2D3748}    % Charcoal Gray
+\definecolor{lighttext}{HTML}{718096} % Cool Gray
+\definecolor{linkcolor}{HTML}{2B6CB0} % Professional Blue for Links
+
+% Configure hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdftitle={Lovesh Nagar Resume},
+    pdfauthor={Lovesh Nagar}
+}
+
+% Set text color
+\color{text}
+
+% Section formatting
+\titleformat{\section}
+  {\color{primary}\normalfont\Large\bfseries}
+  {}{0em}
+  {}
+  [{\color{primary}\titrule[1pt]\vspace{0.2em}}]
+
+% Spacing adjustments for section headers
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Itemize settings for compact spacing
+\setlist[itemize]{topsep=0pt,itemsep=2.5pt,parsep=0pt,leftmargin=1.5em}
+
+% Page numbering configuration (fancyhdr)
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\rfoot{\color{lighttext}\small Page \thepage\ of 2}
+
+% Custom command for job entries
+\newcommand{\jobheader}[4]{
+  \noindent\textbf{\large #1} \hfill \textbf{#2} \\
+  \noindent\textsl{#3} \hfill \textsl{#4}
+  \vspace{0.2em}
+}
+
+% Custom command for project entries
+\newcommand{\projectheader}[3]{
+  \noindent\textbf{\large #1} \hfill \textsl{#3} \\
+  \noindent\href{#2}{\small\texttt{#2}}
+  \vspace{0.2em}
+}
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+    {\Huge \bfseries \color{primary} LOVESH NAGAR} \\
+    \vspace{0.4em}
+    {\large Linux System Administrator \& Junior DevOps Engineer} \\
+    \vspace{0.6em}
+    \small
+    Jaipur, Rajasthan --- 302015 \ \textbar\ \ 
+    Phone: +91 6350458087 \ \textbar\ \ 
+    Email: \href{mailto:nagarlavish99@gmail.com}{nagarlavish99@gmail.com} \\
+    Portfolio: \href{https://loveshportfolio.netlify.app/}{loveshportfolio.netlify.app} \ \textbar\ \ 
+    LinkedIn: \href{https://www.linkedin.com/in/lovesh-nagar}{linkedin.com/in/lovesh-nagar} \ \textbar\ \ 
+    GitHub: \href{https://github.com/lovesh-nagar}{github.com/lovesh-nagar}
+\end{center}
+
+\vspace{-0.5em}
+
+% ==================== SUMMARY ====================
+\section*{PROFESSIONAL SUMMARY}
+Linux System Administrator with 2+ years of experience deploying production applications and managing Apache/Nginx, Proxmox, and DNS/email infrastructure. Hands-on with Docker --- installation, troubleshooting, and container-based production deployments --- and with building/extending GitHub Actions CI/CD pipelines. Working knowledge of container orchestration fundamentals (Kubernetes/Minikube, Ingress), core AWS services, and Azure basics. Actively growing into Junior DevOps and Cloud Support roles on a strong Linux administration and automation foundation.
+
+% ==================== TECHNICAL SKILLS ====================
+\section*{TECHNICAL SKILLS}
+\noindent
+\begin{tabular}{@{}p{3.55in}p{3.55in}@{}}
+    \textbf{Operating Systems:} RHEL, CentOS, Ubuntu & \textbf{CI/CD \& Version Control:} Git, GitHub, GitHub Actions, workflows \\
+    \textbf{Web Servers:} Apache, Nginx, LiteSpeed & \textbf{Monitoring:} Prometheus, Grafana \\
+    \textbf{Containers \& Orchestration:} Docker, Docker Compose, Kubernetes (Minikube), Ingress, Services, CNI basics & \textbf{Databases:} MySQL, MariaDB, PostgreSQL, MongoDB \\
+    \textbf{AWS (Core Services):} EC2, S3, IAM, VPC, RDS, Route 53, ELB/ALB (Round Robin, Least Outstanding, routing), ECS, ECR, Lambda, CloudWatch & \textbf{Azure (Basics):} Virtual Machines (VMs), Entra ID (Active Directory) \\
+    \textbf{Scripting \& Automation:} Bash, Cron Automation & \textbf{Virtualization:} Proxmox VE \\
+    \textbf{Control Panels:} cPanel, Plesk, WHM & \textbf{Networking \& Protocols:} DNS, SSH, FTP, Crontab \\
+\end{tabular}
+
+% ==================== EXPERIENCE (PART 1) ====================
+\section*{PROFESSIONAL EXPERIENCE}
+
+\jobheader{CloudTechTiq Pvt. Ltd.}{Jaipur, India}{Linux System Administrator (Junior DevOps)}{Sept 2024 --- Present}
+\begin{itemize}
+    \item Deployed and maintained production-ready applications built in Node.js, Python (Uvicorn \& gunicorn), Laravel, and React across Apache/Nginx and PM2-managed environments.
+    \item Installed and configured Docker on production Linux servers; containerized select Node.js and Python services for consistent, isolated deployments.
+    \item Troubleshot container-level issues --- networking, volume mounts, and resource limits --- to minimize deployment downtime.
+    \item Built and extended GitHub Actions CI/CD workflows, resolving pipeline and build failures to streamline deployment from commit to production.
+    \item Diagnosed and resolved email deliverability issues using DNS records (SPF, DKIM, DMARC).
+    \item Configured and managed virtual machines in Proxmox VE.
+    \item Set up and maintained daily/weekly backup solutions for disaster recovery.
+    \item Performed regular log monitoring, troubleshooting, and server patching to ensure system stability.
+\end{itemize}
+
+\clearpage
+
+% ==================== EXPERIENCE (PART 2) ====================
+\jobheader{GRRAS Solutions}{Jaipur, India}{Linux Intern}{May 2024 --- Sept 2024}
+\begin{itemize}
+    \item Installed and configured LAMP stack, deployed WordPress websites.
+    \item Deployed Laravel and Magento applications; configured databases, cron jobs, and SSL.
+    \item Gained practical experience with Docker volumes, partitions, and logical volumes (LVM).
+    \item Set up DNS servers, handled log monitoring, SSH configuration, and cron automation.
+    \item Practiced server security, service hardening, and network troubleshooting.
+\end{itemize}
+
+\vspace{0.8em}
+
+\jobheader{Learn N Prep}{Kota, India}{Digital Marketing Executive (Freelance)}{Sept 2023 --- May 2024}
+\begin{itemize}
+    \item Managed Google Ads, Facebook Ads, and created SEO-rich content for YouTube and blogs.
+    \item Performed basic server-side website updates; collaborated with the technical team on site deployments.
+\end{itemize}
+
+% ==================== KEY PROJECTS ====================
+\section*{KEY PROJECTS}
+
+\projectheader{DevBoard --- Three-Tier Containerized Application (React \textbar\ Go \textbar\ PostgreSQL)}{https://github.com/lovesh-nagar/Devboard-three-tier-application}{GitHub Repository}
+\begin{itemize}
+    \item Built and containerized a 3-tier app --- React/Vite frontend, Go REST API backend, PostgreSQL database --- with a dedicated Dockerfile per service.
+    \item Orchestrated the stack with Docker Compose: health-check-based service dependencies, named volumes for data persistence, a custom bridge network, and .env-driven configuration.
+    \item Designed a GitHub Actions CI/CD pipeline: automated lint \& test (ESLint, Go vet/test), Docker image build and push to Docker Hub, and CD deployment via a self-hosted runner (\texttt{docker compose pull \&\& up -d}).
+    \item Added a Makefile to automate common operations (setup, up, down, logs, reset, smoke test).
+\end{itemize}
+
+\vspace{0.8em}
+
+\projectheader{Flask App --- Dockerized AWS ECS Deployment}{https://github.com/lovesh-nagar/Docker-Deploy-Python}{GitHub Repository}
+\begin{itemize}
+    \item Containerized a Python Flask app using two build strategies --- single-stage and multi-stage distroless build --- reducing image size and attack surface for production.
+    \item Built a \texttt{/health} endpoint for ALB/ECS target-group health checks.
+    \item Mapped the AWS deployment path: pushed images to ECR, configured ECS task definitions \& services, and set up an Application Load Balancer target group for traffic routing.
+    \item Automated Docker image build \& push to Docker Hub via GitHub Actions.
+\end{itemize}
+
+\vspace{0.8em}
+
+% ==================== EDUCATION \& CERTIFICATIONS ====================
+\noindent
+\begin{tabular}{@{}p{3.55in}p{3.55in}@{}}
+    \section*{EDUCATION} & \section*{CERTIFICATIONS} \\
+    \textbf{B.A B.Ed} --- Pandit Deendayal Upadhyaya University \par \textsl{Timeline: 2021 --- 2025} & \textbullet\ \textbf{RHCSA} --- Red Hat Certified System Administrator \par \textsl{ID: 240-200-170} \\
+    \textbf{DevOps Course} --- GRRAS Institute \par \textsl{Timeline: 2024} & \textbullet\ \textbf{EX188} --- Red Hat Specialist in Containers \par \textsl{ID: 240-200-170} \\
+\end{tabular}
+
+\vspace{0.8em}
+
+% ==================== STRENGTHS \& OTHER ACHIEVEMENTS ====================
+\noindent
+\begin{tabular}{@{}p{3.55in}p{3.55in}@{}}
+    \section*{OTHER ACHIEVEMENTS \& CLIENT SUPPORT} & \section*{CORE STRENGTHS} \\
+    \textbullet\ Deployed 50+ React, Node, Python, Laravel apps on Linux & \textbullet\ Strong Linux fundamentals \& scripting \\
+    \textbullet\ Real-time metrics dashboard using Prometheus/Grafana & \textbullet\ DevOps: Docker, Actions, K8s, Cloud (AWS/Azure) \\
+    \textbullet\ Hardened servers (firewall, SSH keys, cron audits) & \textbullet\ Client ticketing communication \& L2 resolution \\
+    \textbullet\ Managed client WHM/cPanel environments, SSL \& backups & \textbullet\ Adaptive learner of new tools \& frameworks \\
+    \textbullet\ Automation of health checks via Bash and crontab & \textbullet\ High-pressure troubleshooting \\
+    \textbullet\ Direct client interaction: deployments \& bug fixes & \textbullet\ Detail-oriented documentation skills \\
+\end{tabular}
+
+\end{document}
