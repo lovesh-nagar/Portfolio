@@ -324,6 +324,27 @@ body {
     margin-bottom: 24px;
 }
 
+.hero-avatar {
+    margin-bottom: 20px;
+}
+
+.hero-avatar .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-blue);
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.12);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hero-avatar .profile-photo {
+        width: 96px;
+        height: 96px;
+    }
+}
+
 .hero-title {
     font-size: 4rem;
     font-weight: 800;
